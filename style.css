@@ -1,0 +1,1053 @@
+
+
+@font-face {
+  font-family: condorfont;
+  src: url("./fonts/DIN Alternate Bold.ttf"),
+       url("./fonts/DIN Alternate Bold.ttf")format('truetypecollection');
+}
+
+
+
+
+
+
+
+
+
+
+body {
+  font-family: helvetica neue;
+  font-weight: 200;
+  background: #CACACA;
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+
+}
+
+
+
+#wrapper_header {
+  background: url('./img/background_image_condor.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 700px;
+  position: relative;
+}
+
+#banner_text {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  left: 5%;
+  top: 320px;
+}
+#banner_text_inner {
+  text-align: center;
+}
+
+#login {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+}
+#login_button {
+  background: rgba(0,0,0,0.75);
+  font-size: 25px;
+  color: white;
+  font-family:condorfont;
+  padding: 10px 25px;
+  border-style: none;
+  transition: 0.3s;
+
+}
+#login_button:hover {
+  background: rgba(255,255,255,0.75);
+  color: #BF1E2D;
+  transition: 0.3s;
+}
+
+#logo img{
+  height: auto;
+  width: 25%;
+  padding-left: 2%;
+}
+
+#get_started_button {
+  font-size: 25px;
+  font-weight: 100;
+  background: rgba(0,0,0,0.75);
+  padding: 5px 25px;
+  color: white;
+  border-style: none;
+  margin-top: 20px;
+  transition: 0.3s;
+
+}
+#get_started_button:hover {
+  opacity: 1;
+  cursor:pointer;
+  background: rgba(255,255,255,0.75);
+  color: #BF1E2D;
+  transition: 0.3s;
+
+}
+
+/* THE FIXED VERTICAL NAVIGATION MENU  */
+/*
+#dot {
+	height: 30px;
+	width: 8px;
+	display: inline-block;
+	background: #BF1E2D;
+	border-radius: 25px;
+	align-items: right;
+	transition: 0.2s;
+}
+
+nav ul li {
+	list-style: none;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+nav ul li a {
+	text-decoration: none;
+}
+
+#label {
+	font-family: helvetica;
+	padding-right: 25px;
+	opacity: 0;
+	color: white;
+	transition: 0.2s;
+	font-size: 25px;
+	font-weight: bolder;
+}
+
+li a {
+  text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li:hover #label {
+	opacity: 1;
+	transition: 0.01s;
+  color: white;
+}
+li:hover #dot {
+	transform: scale(1.5);
+	transition: 0.2s;
+  background: white;
+}
+
+nav{
+	margin-right: 2%;
+	position: fixed;
+	top: 20%;
+	right: 40px;
+	transform: translateY(10%);
+	text-align: right;
+  z-index: 10000;
+} */
+
+/* THE FIXED VERTICAL NAVIGATION MENU  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* STANDARD FIXED NAV  */
+
+@media (min-width: 700px) {
+
+  #login_button {
+    background: rgba(0,0,0,0.75);
+    font-size: 25px;
+    color: white;
+    font-family:condorfont;
+    padding: 10px 25px;
+    border-style: none;
+    transition: 0.3s;
+    margin-top: 70px;
+  }
+  #logo img{
+    height: auto;
+    width: 25%;
+    padding-left: 2%;
+    margin-top: 70px;
+  }
+
+#dot {
+	height: 30px;
+	width: 8px;
+	display: inline-block;
+	background: #BF1E2D;
+	border-radius: 25px;
+	align-items: right;
+	transition: 0.2s;
+}
+nav ul {display: flex;
+align-items: center;
+justify-content: center;
+}
+
+nav ul li {
+	list-style: none;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+nav ul li a {
+	text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  margin-right: 50px;
+  margin-left: 50px;
+  font-size: 25px;
+}
+
+nav ul li a:hover {
+  color: #BF1E2D;
+}
+
+
+ /* nav:hover {
+  background-color: rgba(255,255,255,0.75);
+} */
+#label {
+	font-family: helvetica;
+	padding-right: 25px;
+	opacity: 0;
+	color: white;
+	transition: 0.2s;
+	font-size: 25px;
+	font-weight: bolder;
+}
+
+li a {
+  text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li:hover #label {
+	opacity: 1;
+	transition: 0.01s;
+  color: white;
+}
+li:hover #dot {
+	transform: scale(1.5);
+	transition: 0.2s;
+  background: white;
+}
+
+nav{
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.75);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+}}
+/* STANDARD FIXED NAV  */
+
+
+
+
+
+
+
+
+/* ============ ABOUT SECTION =================  */
+#about_section {
+  position: relative;
+  background: url('./img/wings.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 700px;
+  width: 100%;
+}
+#about_section_inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+transform: translate(-50%,-50%);
+
+}
+#about_title {
+  font-family: helvetica neue;
+  font-weight: 200;
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 5%;
+}
+#about_text {
+  font-size: 40px;
+  text-align: center;
+}
+
+/* ============ ABOUT SECTION =================  */
+
+
+
+/* ============ ABOUT SECTION TWO =================  */
+
+
+#about_section_two {
+  position: relative;
+  background: black;
+  height: 1000px;
+  width: 100%;
+}
+#about_section_two_inner {
+  position: absolute;
+  top: 28%;
+  left: 50%;
+transform: translate(-92%,-50%);
+
+}
+#about_title_two {
+  font-family: helvetica neue;
+  font-weight: 200;
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 5%;
+  color: white;
+}
+#about_text_two {
+  font-size: 30px;
+  text-align: center;
+  color: white;
+}
+
+#truck {
+  position: absolute;
+  top:56%;
+  left: 30%;
+  z-index: 100;
+}
+
+
+/* ============ ABOUT SECTION TWO =================  */
+
+
+/* ============ SERVICES =================  */
+
+#services_section {
+  position: relative;
+  background:url('./img/wing.png');
+  background-position: left;
+  background-repeat: no-repeat;
+  background-color:#BF1E2D;
+  height: 262px;
+  width: 100%;
+}
+#services_section_inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+transform: translate(-50%,-50%);
+
+}
+#services_title {
+  font-family: helvetica neue;
+  font-weight: 200;
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 5%;
+  color: white;
+}
+
+/* ============ SERVICES =================  */
+
+
+
+
+
+/* ============ SERVICE COLUMNS =================  */
+
+
+.service_title {
+  width: 100%;
+  font-size: 40px;
+  color: white;
+  top:50;
+  text-align: center;
+  position: absolute;
+}
+
+.service_text {
+  width: 100%;
+  font-size: 20px;
+  color: white;
+  top:80;
+  text-align: center;
+  position: absolute;
+}
+
+
+.service_text_extra {
+  width: 60%;
+  font-size: 18px;
+  color: white;
+  top:130;
+  text-align: left;
+  position: absolute;
+  left: 5%;
+}
+
+.service_text p {
+  width: 90%;
+  font-size: 27px;
+  color: white;
+  top:80;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+
+#services_columns_inner_one {
+  display: flex;
+  width: 100%;
+}
+#service_one {
+  height: 515px;
+  background: url('./img/one.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 33.3%;
+  position: relative;
+}
+
+#service_two {
+  height: 515px;
+  background: url('./img/two.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 33.3%;
+    position: relative;
+}
+
+#service_three {
+  height: 515px;
+  background: url('./img/three.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 33.4%;
+    position: relative;
+}
+
+
+#services_columns_inner_two {
+  display: flex;
+  width: 100%;
+}
+
+
+#service_four {
+  height: 515px;
+  background: url('./img/four.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 33.3%;
+  position: relative;
+}
+
+#service_five {
+  height: 515px;
+  background: url('./img/five.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 33.3%;
+    position: relative;
+}
+
+#service_six {
+  height: 515px;
+  background: url('./img/six.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 33.4%;
+    position: relative;
+}
+
+#service_seven {
+  height: 515px;
+  background: url('./img/seven.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+    position: relative;
+}
+
+#checklist {
+color: white;
+position: absolute;
+left: 70%;
+top: 150px;
+align-items: left !important;
+}
+
+#checklist p {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+#checklist p img {
+  height: 35px;
+}
+
+
+
+/* ============ SERVICE COLUMNS =================  */
+
+
+/* ============ CONTACT FORM =================  */
+
+
+
+
+/* ---------------------------- CONTACT FORM SECTION DESKTOP ----------------------------  */
+
+        .form_field {
+        width: 100%;
+        padding: 10px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        border-radius: 15px;
+        border: none;
+        font-size: 30px;
+        opacity: 0.7;
+        font-family: helvetica neue;
+        text-align: center;
+        font-weight: 200;
+        }
+
+
+        .form_button {
+          width: 40%;
+          height: auto;
+          color: #949494;
+          padding: 10px;
+          margin-top: 30px;
+          margin-bottom: 10px;
+          border-radius: 15px;
+          border: none;
+          font-size: 30px;
+          opacity: 0.7;
+          margin-left: 50%;
+          transform: translateX(-50%);
+          font-family: helvetica neue;
+          font-weight: 200;
+          }
+
+          .form_button:hover {
+            opacity: 1;
+            color: #1E4A5E;;
+          }
+
+        #contact_form {
+          background:black;
+          height: 1500px;
+          width: auto;
+        }
+        #contact_form_title {
+          padding-top:75px;
+        }
+        #contact_form_title p {
+          font-size: 80px;
+          font-family: helvetica neue;
+          font-weight: 200;
+          color: white;
+          text-align: center;
+        }
+        #contact_form_title img {
+          margin-left: 5%;
+          transform:translateX(-50%);
+          height: 60px;
+        }
+
+        #contact_form_inner {
+          width: 100%;
+          height: auto;
+          padding-top: 30px;
+        }
+
+        form {
+          margin-left: 50%;
+          transform: translateX(-50%);
+        }
+
+        #contact_form_info {
+          width: 96%;
+          color: white;
+          font-family: helvetica neue;
+          font-weight: 200;
+          font-size: 30px;
+          margin: 2%;
+          margin-top: 5%;
+          display: inline-flex;
+          position: relative;
+        }
+
+
+        #feed_children {
+          position: absolute;
+        left: 40%;
+        }
+
+        #feed_children img {
+          width: 60%;
+          margin-left: 37%;
+transform: translateX(-50%);
+        }
+
+        #address{
+        left: 5%;
+        position: absolute;
+        font-size: 21px;
+        }
+        #numbers{
+          top:100;
+        left: 5%;
+        position: absolute;
+        font-weight: 200;
+        font-size: 20px;
+        }
+        #office{
+          color: white;
+        }
+        #partnerships {
+          position: absolute;
+          right: 5%;
+        }
+        #partnerships img {
+          height: 200px;
+          width: auto;
+        }
+
+        #social {
+          position: absolute;
+          left: 64%;
+          transform: translateX(-50%);
+          align-items: center;
+          justify-content: center;
+          top: 250px;
+        }
+        #social img {
+          width: 14%;
+          height: auto;
+          padding: 10px 10px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+
+
+        #mobile{
+          color: white;
+        }
+        #office:hover{
+          color: #BF1E2D;
+        }
+        #mobile:hover{
+          color: #BF1E2D;
+        }
+        #copyright {
+          text-align: center;
+          margin-top: 320px;
+          font-family: arial;
+          color: white;
+        }
+
+/* ---------------------------- CONTACT FORM SECTION DESKTOP ----------------------------  */
+
+
+
+/* ============ CONTACT FORM =================  */
+
+
+
+
+
+/* ============ MOBILE =================  */
+
+@media (min-width:1119px) and (max-width:1823px) {
+  #checklist {
+    left: 78%;
+  }
+}
+
+@media (min-width:700px) and (max-width: 1147px) {
+
+  #truck img {
+    width: 80%;
+    height: auto;
+
+  }
+}
+
+
+@media (min-width:700px) and (max-width: 869px) {
+
+  #truck img {
+    width: 80%;
+    height: auto;
+
+  }
+
+  #about_section {
+    background: none;
+  }
+  #about_text_two {
+    font-size: 24px;}
+
+  .service_text p {
+    font-size: 22px;}
+
+  .service_text_extra {
+      font-size: 16px;}
+
+  #checklist {
+    left: 67%;
+    font-size: 16px;
+  }
+  form {
+    width: 70%;
+  }
+
+}
+@media (min-width:740px) {
+  #logo a img {
+    background-color: rgba(255,255,255,0.5);
+padding-right: 20%;
+  }
+}
+
+@media (min-width:200px) and (max-width: 699px) {
+
+  #truck img {
+    width: 80%;
+    height: auto;
+
+  }
+
+  #feed_children {
+    position: absolute;
+    left: 60%;
+    transform: translateX(-50%);
+    top: 180px;
+    width: 80%;
+  }
+
+  #about_section {
+    background: none;
+    height: 450px;
+  }
+  #about_text_two {
+    font-size: 24px;}
+
+  .service_text p {
+    font-size: 22px;}
+
+  .service_text_extra {
+      font-size: 16px;}
+
+  #checklist {
+    left: 67%;
+    font-size: 16px;}
+
+
+
+
+    #about_title {
+    font-family: helvetica neue;
+    font-weight: 200;
+    font-size: 35px;}
+    #about_text {
+    font-size: 20;
+    text-align: center;}
+
+    #about_title_two {
+    font-family: helvetica neue;
+    font-weight: 200;
+    font-size: 35px;}
+    #about_text_two {
+    font-size: 20;
+    text-align: center;}
+
+    #about_section_two_inner {
+    position: absolute;
+    top: 28%;
+    left: 87%;
+    transform: translate(-92%,-50%);
+    width: 87%;
+}
+
+#services_columns_inner_one {
+    display: initial;}
+
+  #service_one {
+    width: 100%;
+  }
+
+  #service_two {
+    width: 100%;
+  }
+
+  #service_three {
+    width: 100%;
+  }
+
+  #services_columns_inner_two {
+      display: initial;}
+
+    #service_four {
+      width: 100%;
+    }
+
+    #service_five {
+      width: 100%;
+    }
+
+    #service_six {
+      width: 100%;
+    }
+
+#service_seven {
+  height: 700px;
+}
+#service_seven .service_title {
+  font-size: 25px;
+}
+#about_section_two {
+  height: 800px;
+}
+#truck {
+  left: initial;
+}
+#truck img {
+    width: 100%;
+    height: auto;
+}
+
+#checklist {
+  display: none;
+}
+
+.service_text_extra {
+  width: 90%;
+  font-size: 16px;
+  text-align: center;
+}
+
+#services_title {
+  font-size: 35px;
+}
+#services_section {
+  height: 170px;
+}
+
+#contact_form_title p {
+    font-size: 52px;}
+
+    form {
+      width: 70%;
+    }
+
+  .form_field {
+    font-size: 20px;
+    padding: 5px;
+    margin-bottom: 0px;
+  }
+
+  .form_button {
+      width: 40%;
+      height: auto;
+      color: #949494;
+      padding: 0px;
+      margin-top: 22px;
+      margin-bottom: 10px;
+      border-radius: 15px;
+      border: none;
+      font-size: 20px;}
+  #partnerships {
+      position: absolute;
+      top: 387px;
+      right: initial;
+      left: 50%;
+      transform: translateX(-50%);}
+
+  #address {
+      top: 40;
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+      font-weight: 200;
+      font-size: 20px;
+      width: 100%;
+      text-align: center;}
+  #numbers {
+      top: 100;
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+      font-weight: 200;
+      font-size: 20px;
+      width: 100%;
+      text-align: center;}
+
+#copyright {
+  margin-top:700px;
+}
+
+#social {
+    position: absolute;
+    left: 60%;
+    transform: translateX(-50%);
+    align-items: center;
+    justify-content: center;
+    top: 620;
+}
+
+#social img {
+  width: 28%;
+}
+
+#login {
+    position: absolute;
+    top: 14px;
+    right: 46%;
+    transform: translateX(50%);
+}
+
+#login_button {
+    background: rgba(0,0,0,0.75);
+    font-size: 15px;
+    color: white;
+    font-family: condorfont;
+    padding: 10px 25px;
+    border-style: none;
+}
+
+#mobile-navi{
+  background: url('./img/menu_icon.png');
+  height: 50px;
+  background-size: contain;
+  width: 50px;
+  position: absolute;
+  left: 80%;
+  top: 10px;
+  z-index: 1000;
+  color: black;
+}
+
+nav ul{
+ display: none;
+ height: 315px;
+ width: 100%;
+ background: white;
+ z-index: 50000;
+ position: absolute;
+
+}
+
+nav {
+ height: 75px;
+ position: relative;
+ width: 100%;
+ right: initial;
+ top: initial;
+ margin-right: initial;
+ text-align: center;
+}
+
+.open {
+ display: block;
+}
+
+nav ul li {
+ padding: 0;
+ display: block;
+ width: 70%;
+ margin-top: 20px;
+ text-align: center;
+ transform: translateX(34%);
+}
+nav ul li a {
+ padding: 0;
+ display: inline-block;
+ margin-left: initial;
+ transform: translateX(-50%);
+ margin-top: 20px;
+ text-align: center;
+ text-decoration: none;
+ color: black;
+ font-size: 20px;
+}
+
+nav ul li a span #label {
+margin-left: 50%;
+transform: translateX(-50%);
+}
+
+li a #label {
+	font-family: helvetica;
+	padding-right: initial;
+	color: black;
+	transition: 0.2s;
+	font-size: 25px;
+	font-weight: bolder;
+  opacity: 1;
+}
+
+li:hover #label {
+	opacity: 1;
+	transition: 0.01s;
+  color: black;
+}
+
+#dot {
+  display: none;
+}
+
+
+
+
+}
+
+
+
+
+
+/* ============ MOBILE =================  */
